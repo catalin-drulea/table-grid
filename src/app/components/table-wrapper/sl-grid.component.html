@@ -1,0 +1,27 @@
+<smart-table #table
+    [id]="gridId"
+    [dataSource]="[]"
+    dataRowId="id"
+    [autoLoadState]="autoLoadState"
+    [autoSaveState]="autoSaveState"
+    [stateSettings]="stateSettings"
+    [loadColumnStateBehavior]="loadColumnStateBehavior"
+    [selection]="true"
+    [selectionByHierarchy]="selectionByHierarchy"
+    selectionMode="extended"
+    sortMode="one" [sort]="sort" (sort)="columnSorted.emit($event)"
+    freeze-header
+    [tooltip]="true"
+    [columns]="columns"
+    [grouping]="grouping"
+    [groupFormatFunction]="groupingFormatFunction"
+    [locale]="language"
+    [virtualization]="virtualization"
+    [columnSizeMode]="columnSizeMode"
+    columnMinWidth="100"
+    [columnResize]="true" (onColumnResize)="columnResized.emit($event)"
+    (change)="onSelectionChange()"
+    (columnClick)="onTableColumnClick($event)"
+    (onCellClick)="onCellClick($event)"
+>
+</smart-table>

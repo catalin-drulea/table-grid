@@ -1,0 +1,34 @@
+* {
+    --icon-size: 16px;
+}
+
+:host {
+    display: contents;
+}
+
+.item-menu-button {
+    color: grey;
+    background: transparent;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    line-height: var(--icon-size);
+
+    mat-icon {
+        display: contents;
+    }
+}
+
+mat-icon {
+    font-size: var(--icon-size);
+    height: var(--icon-size);
+    width: var(--icon-size);
+    line-height: var(--icon-size);
+
+    svg {
+        pointer-events: none;
+    }
+}

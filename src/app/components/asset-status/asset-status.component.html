@@ -1,0 +1,2 @@
+<am-icon *ngIf="statusType === eAssetStatusType.Icon" [colorclass]="colorClass" [mattooltip]="matTooltip">{{icon}}</am-icon>
+<am-in-use-spinner *ngIf="statusType === eAssetStatusType.Progress" [tooltip]="matTooltip"></am-in-use-spinner>

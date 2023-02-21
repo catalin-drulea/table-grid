@@ -1,0 +1,38 @@
+<button mat-icon-button [matMenuTriggerFor]="actionMenu" class="item-menu-button" (click)="onIconClick($event)">
+    <mat-icon>menu</mat-icon>
+</button>
+
+<!-- .primary-menu is used for detecting when a menu is open from clients -->
+<mat-menu #actionMenu="matMenu" class="primary-menu">
+    <ng-template matMenuContent>
+        <ng-container *ngFor="let button of buttonsList">
+            <button disableRipple mat-menu-item *ngIf="!button.innerButtons && !button.hidden" id="{{button.id}}"
+                (click)="button.clickHandler(resourceId)" [disabled]="button.disabled">
+                <div matTooltip="{{button.tooltipText}}" id="tooltip-{{button.id}}" [matTooltipDisabled]="!button.tooltipText">
+                    <mat-icon *ngIf="button.icon?.type === 'mat'">{{button.icon?.name}}</mat-icon>
+                    <mat-icon *ngIf="button.icon?.type === 'sti'" fontSet="sti" fontIcon="{{button.icon?.name}}"></mat-icon>
+                    <span class="sl-action-button-text">{{button.label}}</span>
+                </div>
+            </button>
+            <button disableRipple mat-menu-item [matMenuTriggerFor]="sub_menu" id="{{button.id}}" *ngIf="button.innerButtons && !button.hidden">
+                <div matTooltip="{{button.tooltipText}}" id="tooltip-{{button.id}}" [matTooltipDisabled]="!button.tooltipText">
+                    <mat-icon *ngIf="button.icon?.type === 'mat'">{{button.icon?.name}}</mat-icon>
+                    <mat-icon *ngIf="button.icon?.type === 'sti'" fontSet="sti" fontIcon="{{button.icon?.name}}"></mat-icon>
+                    <span class="sl-action-button-text">{{button.label}}</span>
+                </div>
+            </button>
+            <mat-menu #sub_menu="matMenu" class="inner-button-menu">
+                <ng-container *ngFor="let innerButton of button.innerButtons">
+                    <button disableRipple mat-menu-item *ngIf="!innerButton.hidden" id="{{innerButton.id}}"
+                        (click)="innerButton.clickHandler(resourceId)" [disabled]="innerButton.disabled">
+                        <div matTooltip="{{innerButton.tooltipText}}" id="tooltip-{{innerButton.id}}" [matTooltipDisabled]="!innerButton.tooltipText">
+                            <mat-icon *ngIf="innerButton.icon?.type === 'mat'">{{innerButton.icon?.name}}</mat-icon>
+                            <mat-icon *ngIf="innerButton.icon?.type === 'sti'" fontSet="sti" fontIcon="{{innerButton.icon?.name}}"></mat-icon>
+                            <span class="sl-action-button-text">{{innerButton.label}}</span>
+                        </div>
+                    </button>
+                </ng-container>
+            </mat-menu>
+        </ng-container>
+    </ng-template>
+</mat-menu>

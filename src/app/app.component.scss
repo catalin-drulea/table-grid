@@ -1,0 +1,203 @@
+sl-grid {
+    display: block;
+    height: 500px;
+}
+
+// // ::ng-deep .mat-tab-group{
+// //     margin-top:-5px;
+// //   }
+  
+// //   ::ng-deep .mat-tab-header{
+// //         z-index: 999;
+// //         width:100vw;
+// //         position: fixed  !important;
+// //         background-color: red !important;
+// //   }
+// //   ::ng-deep .mat-tab-body-wrapper{
+// //     //   position: relative !important;
+// //     //   margin-top:50px;
+// //     height: 500px;
+// //   }
+
+// // sl-grid {
+// //     height: 100%;
+// // }
+
+// // #asset-details-tabs-container .mat-tab-body-wrapper {
+// //     display: flex;
+// //     flex-flow: column;
+// //     min-height: 100%;
+// //     flex: 1 1 auto;
+// // }
+
+// // .view-container {
+// //     background-color: white;
+// //     width: 100%;
+// //     z-index: 10;
+// // }
+
+// // #sl-details-panel {
+// //     display: block;
+// // }
+
+// @import '../styles.scss';
+
+// #sl-details-panel {
+//     display: block;
+// }
+
+// .asset-details-tab-button-disabled {
+//     opacity: 0.5;
+// }
+
+// .asset-details-tab-button-disabled:hover {
+//     opacity: 0.5;
+// }
+
+// .asset-details-tab-button {
+//     border: blue;
+// }
+
+// .asset-details-tab-button span {
+//     font-size: 15px;
+// }
+
+// .asset-details-tabs-divider {
+//     position: absolute;
+//     left: 5px;
+//     width: 2px;
+//     opacity: 0.8;
+//     height: 25px;
+//     background-color: grey;
+// }
+
+// .asset-details-tabs-container {
+//     position: relative;
+// }
+
+// #asset-details-toolbar {
+//     background-color: transparent;
+//     color: grey;
+//     height: 48px;
+// }
+
+// .asset-details-font-awesome-icon {
+//     font-size: 17px;
+//     color: grey;
+// }
+
+// .asset-details-add-calibration-button {
+//     cursor: pointer;
+// }
+
+// .view-container {
+//     background-color: $text-base-color;
+//     width: 100%;
+//     z-index: 10;
+// }
+
+// .view-containerr {
+//     height: 100%;
+//     background-color: $text-base-color;
+//     width: 100%;
+//     z-index: 10;
+// }
+
+// am-asset-details-overview {
+//     height: 100%;
+//     width: 100%;
+// }
+
+// .calibration-alarms-badge .mat-badge-content {
+//     color: transparent;
+//     width: 10px !important;
+//     height: 10px !important;
+//     margin-right: -10px;
+//     margin-top: 0px;
+// }
+
+// .am-critical-alarm .mat-badge-content {
+//     background: $alarm-past-calibration-color;
+// }
+
+// .am-moderate-alarm .mat-badge-content {
+//     background: $alarm-approaching-calibration-color;
+// }
+
+// .am-acknowledged-alarm .mat-badge-content {
+//     background: $alarm-acknowledged-color;
+// }
+
+// .tag-alarms-badge .mat-badge-content {
+//     color: transparent;
+//     width: 10px !important;
+//     height: 10px !important;
+//     margin-right: -10px;
+//     margin-top: 0px;
+// }
+
+// #asset-details-tabs-container .mat-tab-body-wrapper {
+//     display: flex;
+//     flex-flow: column;
+//     min-height: 100%;
+//     flex: 1 1 auto;
+// }
+
+// .asset-details-certificate-icon {
+//     font-size: 17px;
+//     color: grey;
+//     margin-bottom: 22px;
+//     text-align: center;
+// }
+
+// .asset-details-toolbar-button {
+//     text-transform: none !important;
+//     color: initial !important;
+//     background-color: transparent;
+//     margin: 1em 0 1em 0;
+//     font-size: 15px;
+// }
+
+// .asset-details-toolbar-button mat-icon {
+//     color: grey;
+//     margin-right: 0.5em;
+//     height: auto !important;
+//     width: auto !important;
+// }
+
+// .asset-details-delete-button {
+//     margin-left: 0;
+// }
+
+// .asset-details-acknowledge-alarm-button {
+//     padding-left: 0;
+// }
+
+// .asset-details-acknowledge-alarm-button mat-icon{
+//     margin-right: 0.2em;
+// }
+
+// .sl-tag-tree-container {
+//     height: 0;
+//     flex: 1 1 auto;
+// }
+
+// .sl-files-grid-container {
+//     height: 0;
+//     flex: 1 1 auto;
+// }
+
+// .mat-table-container {
+//     height: 0;
+//     flex: 1 1 auto;
+// }
+
+// .tags-toolbar {
+//     margin-top: 5px;
+//     border-bottom: 0;
+// }
+
+// .files-toolbar {
+//     margin-top: 5px;
+//     border-bottom: 0;
+// }

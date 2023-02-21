@@ -1,0 +1,13 @@
+<sl-grid #slGrid gridId="am-assets-grid" class="am-assets-grid"
+                [dataSource]="data" [columns]="columns" [language]="locale"
+                dataSourceFingerprint="lastUpdatedTimestamp"
+                [autoLoadState]="enableAutoState" [autoSaveState]="enableAutoState"
+                [stateSettings]="stateSettings" loadColumnStateBehavior="stateOnly"
+                [treeMode]="treeModeEnabled" parentDataField="assetParentId"
+                [grouping]="groupingEnabled" [virtualization]="virtualization"
+                [selectionByHierarchy]="selectionByHierarchy"
+                (selectedRowsChanged)="onSelectionChanged($event)"
+                (cellClick)="onCellClick($event)" (headerClick)="onHeaderClick($event)"
+                (columnResized)="onColumnResized()"
+                columnSizeMode="default">
+            </sl-grid>

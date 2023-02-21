@@ -1,0 +1,30 @@
+.grey-icon {
+    color: grey;
+}
+
+.critical-alarm {
+    color: red;
+}
+
+.moderate-alarm {
+    color: orange;
+}
+
+.acknowledged-alarm {
+    color: black;
+}
+
+.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.checkmark-icon {
+    color: green;
+}
+
+.fail-icon {
+    color: red;
+}
